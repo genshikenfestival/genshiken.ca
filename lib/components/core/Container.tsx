@@ -11,7 +11,9 @@ export default function Container({
   isTopLevel?: boolean;
 }>) {
   return (
-    <div className={`${isTopLevel ? "mt-25" : ""} container-full mx-auto`}>
+    <div
+      className={`max-w-[75%] m-auto 2xl:max-w-640 2xl:px-80 xl:max-w-full xl:px-80 md:max-w-full md:px-20 font-sans ${isTopLevel ? "mt-25" : ""} container-full mx-auto`}
+    >
       {children}
     </div>
   );

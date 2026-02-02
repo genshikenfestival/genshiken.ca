@@ -24,8 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-CA">
-      <body className={`${inter.className} antialiased w-screen h-screen`}>
+    <html lang="en-CA" className="min-h-screen h-screen">
+      <body
+        className={`${inter.className} antialiased min-h-screen h-screen w-screen`}
+      >
         <Navbar />
         {children}
         <Footer />
