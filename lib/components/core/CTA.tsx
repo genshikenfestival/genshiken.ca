@@ -11,17 +11,17 @@ export default function CTA({
 }: Readonly<{ children: React.ReactNode; className?: string }>) {
   return (
     <Button
-      className={` shadow-2xl
+      className={` transition-all duration-200
         rounded-3xl bg-brand-purple px-16 py-4 text-white
-        data-active:bg-purple-800  data-hover:bg-purple-800 
+        data-active:bg-gray-500 data-hover:bg-gray-500 
         data-hover:cursor-pointer
-        font-brand font-bold
-        center
-        data-hover:shadow-2xs
+        font-semibold
+        text-lg
+        center  
         ${className ?? ""}`}
     >
       {children}
-      <i className="ml-2 bi bi-arrow-right"></i>
+      <i className="ml-1 translate-y-5 bi bi-arrow-right"></i>
     </Button>
   );
 }
