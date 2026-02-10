@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "bootstrap-icons";
 
 :root {
   --background-base: #fff;
@@ -9,6 +10,7 @@
 @theme {
   --color-brand-white: #f9f9f9;
   --color-brand-purple: #8a7cc8;
+  --font-brand: "Fredoka", "Inter", Helvetica, sans-serif;
 }
 
 body {
