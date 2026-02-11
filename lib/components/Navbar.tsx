@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="h-25 bg-brand-purple z-10 absolute top-0 w-screen">
+    <nav className="bg-brand-purple absolute top-0 z-10 h-25 w-screen">
       &nbsp;
     </nav>
   );

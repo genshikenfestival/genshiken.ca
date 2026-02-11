@@ -1,14 +1,22 @@
+/**
+ * Copyright (c) 2026 Genshiken Festival, Contributors, Artists and Volunteers.
+ * Copyright (c) 2026 Ontario Anime Society.
+ * 
+ * All rights reserved.
+ */
+
 @import "tailwindcss";
 @import "bootstrap-icons";
 
 :root {
   --background-base: #fff;
-  --background-brand: #f9f9f9;
+  --background-brand: hsl(255, 100%, 98%);
   --foreground: #171717;
 }
 
 @theme {
-  --color-brand-white: #f9f9f9;
+  /* --color-brand-white: #f9f9f9; */
+  --color-brand-white: hsl(255, 100%, 98%);
   --color-brand-purple: #8a7cc8;
   --font-brand: "Fredoka", "Inter", Helvetica, sans-serif;
 }

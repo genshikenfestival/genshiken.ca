@@ -1,5 +1,7 @@
 /**
- * Copyright (c) 2026 Genshiken Festival / Ontario Anime Society
+ * Copyright (c) 2026 Genshiken Festival, Contributors, Artists and Volunteers.
+ * Copyright (c) 2026 Ontario Anime Society.
+ *
  * All rights reserved.
  */
 
@@ -11,17 +13,10 @@ export default function CTA({
 }: Readonly<{ children: React.ReactNode; className?: string }>) {
   return (
     <Button
-      className={` transition-all duration-200
-        rounded-3xl bg-brand-purple px-16 py-4 text-white
-        data-active:bg-gray-500 data-hover:bg-gray-500 
-        data-hover:cursor-pointer
-        font-semibold
-        text-lg
-        center  
-        ${className ?? ""}`}
+      className={`bg-brand-purple center rounded-3xl px-16 py-4 text-lg font-semibold text-white transition-all duration-200 data-active:bg-gray-500 data-hover:cursor-pointer data-hover:bg-gray-500 ${className ?? ""}`}
     >
       {children}
-      <i className="ml-1 translate-y-5 bi bi-arrow-right"></i>
+      <i className="bi bi-arrow-right ml-1 translate-y-5"></i>
     </Button>
   );
 }

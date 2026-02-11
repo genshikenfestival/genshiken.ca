@@ -1,35 +1,36 @@
 /**
- * Copyright (c) 2026 Genshiken Festival / Ontario Anime Society
+ * Copyright (c) 2026 Genshiken Festival, Contributors, Artists and Volunteers.
+ * Copyright (c) 2026 Ontario Anime Society.
+ *
  * All rights reserved.
  */
 
-import Haru from "../../branding/Haru";
-import Aki from "../../branding/Aki";
-import CTA from "../../core/CTA";
+import CTA from "@/lib/components/core/CTA";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <div className="flex flex-col items-center">
-      <div className="h-[75vh] md:h-[60vh] w-screen bg-brand-white px-12 md:px-32 flex lg:flex-row flex-col items-center justify-between overflow-clip">
+      <div className="bg-brand-white flex h-[75vh] w-screen flex-col items-center justify-between overflow-clip bg-[url('/assets/hero-bg.png')] bg-cover bg-no-repeat px-12 md:px-32 lg:flex-row">
         <div
           id="hero__genshiken-info"
-          className="flex flex-col lg:translate-y-0 translate-y-[150%] md:translate-y-24"
+          className="flex translate-y-8/12 flex-col md:translate-y-24 lg:translate-y-0"
         >
-          <h1 className="font-brand font-black xl:text-8xl lg:leading-auto lg:text-7xl md:text-8xl text-6xl">
+          <h1 className="font-brand lg:leading-auto text-7xl font-black xl:text-8xl">
             Genshiken
             <br />
             Festival
           </h1>
-          <h2 className="font-light tracking-[20%] uppercase xl:text-4xl lg:text-2xl  text-brand-purple mt-4">
+          <h2 className="text-brand-purple mt-4 font-light tracking-[20%] uppercase lg:text-2xl xl:text-4xl">
             March 28, 2026
           </h2>
-          <p className="font-medium xl:text-xl lg:text-lg uppercase mt-2">
+          <p className="mt-2 font-medium uppercase lg:text-lg xl:text-xl">
             The Warehouse, Toronto, Ontario
           </p>
-          <div className="xl:w-3/4 mt-12 hidden lg:block">
+          <div className="mt-12 hidden lg:block xl:w-3/4">
             <CTA
               className={
-                "min-w-full shadow-xl shadow-brand-purple/50 data-hover:shadow-none"
+                "shadow-brand-purple/50 min-w-full shadow-xl data-hover:shadow-none"
               }
             >
               Buy Tickets Now!
@@ -40,13 +41,14 @@ export default function Hero() {
           id="hero__genshiken-mascots"
           className="flex flex-row items-center"
         >
-          <Haru
-            className="xl:translate-y-5/24 xl:translate-x-24 2xl:min-w-150 xl:min-w-100 lg:min-w-75 lg:translate-x-0 lg:translate-y-2/24 md:max-w-50 max-w-32 md:translate-y-12 translate-y-24"
-            isDecorative
-          />
-          <Aki
-            className="2xl:min-w-150 xl:min-w-100  xl:translate-y-5/24 lg:min-w-75 lg:-translate-x-12 lg:translate-y-2/24 md:max-w-50 md:translate-y-12 max-w-32 translate-y-24"
-            isDecorative
+          <Image
+            className={
+              "translate-y-10/24 md:translate-y-4/24 2xl:max-w-25 2xl:translate-y-4/24"
+            }
+            src={"/assets/mascot/haru-and-aki-hero.png"}
+            alt=""
+            width={1722}
+            height={2868}
           />
         </div>
       </div>

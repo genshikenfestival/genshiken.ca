@@ -1,12 +1,13 @@
 /**
- * Copyright (c) 2026 Genshiken Festival / Ontario Anime Society
+ * Copyright (c) 2026 Genshiken Festival, Contributors, Artists and Volunteers.
+ * Copyright (c) 2026 Ontario Anime Society.
+ *
  * All rights reserved.
  */
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, Fredoka } from "next/font/google";
+import { Inter, Fredoka } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/lib/components/Navbar";
 import Footer from "@/lib/components/Footer";
 
 const inter = Inter({
@@ -27,9 +28,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-CA" className="min-h-screen h-screen">
+    <html lang="en-CA" className="h-screen min-h-screen">
       <body
-        className={`${inter.className} antialiased min-h-screen h-screen w-screen`}
+        className={`${inter.className} h-screen min-h-screen w-screen antialiased`}
       >
         {/* <Navbar /> */}
         {children}

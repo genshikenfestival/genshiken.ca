@@ -1,5 +1,7 @@
 /**
- * Copyright (c) 2026 Genshiken Festival / Ontario Anime Society
+ * Copyright (c) 2026 Genshiken Festival, Contributors, Artists and Volunteers.
+ * Copyright (c) 2026 Ontario Anime Society.
+ *
  * All rights reserved.
  */
 
