@@ -24,10 +24,10 @@ export default function Hero() {
           <h2 className="text-brand-purple mt-4 font-light tracking-[20%] uppercase lg:text-2xl xl:text-4xl">
             March 28, 2026
           </h2>
-          <p className="mt-2 font-medium uppercase lg:text-lg xl:text-xl">
+          <p className="mt-4 font-medium uppercase lg:text-lg xl:text-xl">
             The Warehouse, Toronto, Ontario
           </p>
-          <div className="mt-12 hidden lg:block xl:w-3/4">
+          <div className="xl:w-10.5/12 mt-12 hidden w-full lg:block">
             <CTA
               className={
                 "shadow-brand-purple/50 min-w-full shadow-xl data-hover:shadow-none"
@@ -42,8 +42,10 @@ export default function Hero() {
           className="flex flex-row items-center"
         >
           <Image
+            quality={100}
+            preload
             className={
-              "translate-y-10/24 md:translate-y-4/24 2xl:max-w-25 2xl:translate-y-4/24"
+              "translate-y-10/24 md:translate-y-4/24 2xl:translate-y-4/24"
             }
             src={"/assets/mascot/haru-and-aki-hero.png"}
             alt=""
