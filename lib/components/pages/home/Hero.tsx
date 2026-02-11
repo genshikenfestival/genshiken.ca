@@ -38,14 +38,23 @@ export default function Hero() {
           </div>
         </div>
         <div
-          id="hero__genshiken-mascots"
+          id="hero__genshiken-mascots--desktop"
           className="flex flex-row items-center"
         >
           <Image
             quality={100}
             preload
+            className={"block lg:hidden"}
+            src={"/assets/mascot/haru-and-aki-hero-mobile.png"}
+            alt=""
+            width={1722}
+            height={2868}
+          />
+          <Image
+            quality={100}
+            preload
             className={
-              "xs:translate-y-10/24 translate-y-6/24 md:translate-y-4/24 2xl:translate-y-4/24"
+              "hidden lg:block lg:translate-y-4/24 2xl:translate-y-4/24"
             }
             src={"/assets/mascot/haru-and-aki-hero.png"}
             alt=""
@@ -55,7 +64,9 @@ export default function Hero() {
         </div>
       </div>
       <CTA
-        className={"-translate-y-8 shadow-2xl data-hover:shadow-2xs lg:hidden"}
+        className={
+          "z-10 -translate-y-8 shadow-2xl data-hover:shadow-2xs lg:hidden"
+        }
       >
         Buy Tickets Now!
       </CTA>
