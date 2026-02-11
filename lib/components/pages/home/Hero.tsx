@@ -45,7 +45,7 @@ export default function Hero() {
             quality={100}
             preload
             className={
-              "translate-y-10/24 md:translate-y-4/24 2xl:translate-y-4/24"
+              "xs:translate-y-10/24 translate-y-6/24 md:translate-y-4/24 2xl:translate-y-4/24"
             }
             src={"/assets/mascot/haru-and-aki-hero.png"}
             alt=""

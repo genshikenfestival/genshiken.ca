@@ -15,6 +15,7 @@
 }
 
 @theme {
+  --breakpoint-xs: 30rem;
   /* --color-brand-white: #f9f9f9; */
   --color-brand-white: hsl(255, 40%, 98%);
   --color-brand-purple: #8a7cc8;
