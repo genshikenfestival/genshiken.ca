@@ -10,13 +10,13 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center">
-      <div className="bg-brand-white relative box-content flex h-[75vh] flex-col items-center justify-between overflow-clip bg-[url('/assets/hero-bg.png')] bg-cover bg-no-repeat px-12 md:box-border md:px-32 lg:flex-row">
+    <div className="flex w-full flex-col items-center">
+      <div className="bg-brand-white relative box-content flex h-[75vh] w-full flex-col items-center justify-between overflow-clip bg-[url('/assets/hero-bg.png')] bg-cover bg-no-repeat px-12 md:box-border md:px-32 lg:flex-row">
         <div
           id="hero__genshiken-info"
           className="flex flex-col pt-[50%] md:pt-[25%] lg:translate-y-0 lg:pt-0"
         >
-          <h1 className="font-brand lg:leading-auto text-6xl font-black md:text-6xl xl:text-8xl">
+          <h1 className="font-brand lg:leading-auto text-6xl font-black md:text-6xl xl:text-8xl 2xl:text-9xl">
             Genshiken
             <br />
             Festival
@@ -39,7 +39,7 @@ export default function Hero() {
         </div>
         <div
           id="hero__genshiken-mascots--desktop"
-          className="flex w-[75%] flex-row items-center"
+          className="flex flex-row items-center"
         >
           <Image
             quality={100}

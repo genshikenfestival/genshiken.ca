@@ -1,6 +1,16 @@
 import type { NextConfig } from "next";
+import { execSync } from "child_process";
+
+// starts a command line process to get the git hash
+const commitHash = execSync('git log --pretty=format:"%h" -n1')
+  .toString()
+  .trim();
 
 const nextConfig: NextConfig = {
+  env: {
+    COMMIT_HASH: commitHash,
+    APP_ENVIRONMENT: "DEVELOPMENT",
+  },
   images: {
     qualities: [75, 100],
   },

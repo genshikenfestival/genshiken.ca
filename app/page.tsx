@@ -11,7 +11,7 @@ import { createMetadata } from "@/lib/utils/createMetadata";
 export const metadata = createMetadata({ title: "2026" });
 export default function Home() {
   return (
-    <main className="flex max-w-full flex-col items-center">
+    <main className="max-w-full flex-col items-center">
       <Hero />
       <div className="min-h-[80vh]"></div>
     </main>
