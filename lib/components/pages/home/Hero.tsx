@@ -39,7 +39,7 @@ export default function Hero() {
         </div>
         <div
           id="hero__genshiken-mascots--desktop"
-          className="flex flex-row items-center"
+          className="flex w-[75%] flex-row items-center"
         >
           <Image
             quality={100}
