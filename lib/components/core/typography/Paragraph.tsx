@@ -15,5 +15,5 @@ export default function Paragraph({
   className = "",
   children,
 }: ParagraphProps) {
-  return <p className={`text-lg ${className}`}>{children}</p>;
+  return <p className={`text-base md:text-lg ${className}`}>{children}</p>;
 }

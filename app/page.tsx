@@ -19,7 +19,7 @@ export default function Home() {
       <Hero />
       {/* <div className="min-h-[80vh]"></div> */}
       <Container className="mt-24 mb-24">
-        <Callout title="What is Genshiken?">
+        <Callout title="What is Genshiken?" className="mt-12">
           Genshiken Festival is a one-day convention organized by a variety of
           Ontario University Anime Clubs and brought to you by some of the same
           organizers as Ākēdo Festival! The Festival features Artist Alleys,

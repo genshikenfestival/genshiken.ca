@@ -5,13 +5,12 @@
  * All rights reserved.
  */
 
-import { Button } from "@headlessui/react";
 import Heading from "./core/typography/Heading";
 import Paragraph from "./core/typography/Paragraph";
 import Image from "next/image";
 
 export default function Callout({
-  className,
+  className = "",
   title,
   children,
 }: Readonly<{
@@ -20,10 +19,10 @@ export default function Callout({
   className?: string;
 }>) {
   return (
-    <div className="relative mx-auto mb-24 max-w-5xl">
+    <div className={`relative mx-auto mb-14 max-w-5xl ${className}`}>
       <div className="bg-brand-white border-brand-purple relative flex flex-col gap-4 rounded-2xl border-2 p-12">
         <Image
-          className="absolute -top-10 -right-10 h-20 w-20 md:-top-18 md:-right-14 md:h-31.25 md:w-31.25"
+          className="absolute -top-12 -right-12 h-24 w-24 md:-top-18 md:-right-14 md:h-31.25 md:w-31.25"
           src={"/assets/mascot/aki-mug.png"}
           alt=""
           height={125}
@@ -33,7 +32,7 @@ export default function Callout({
         <Paragraph className="">{children}</Paragraph>
       </div>
       <Image
-        className="absolute -bottom-9.5 -left-5 h-20 w-20 md:-bottom-12 md:-left-8 md:h-31.25 md:w-31.25"
+        className="absolute -bottom-9.5 -left-6.5 h-24 w-24 md:-bottom-12 md:-left-8 md:h-31.25 md:w-31.25"
         src={"/assets/flowers.png"}
         alt=""
         height={125}
