@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026 Genshiken Festival, Contributors, Artists and Volunteers.
+ * Copyright (c) 2026 Genshiken Festival Organizing Committee, Contributors and Artists.
  * Copyright (c) 2026 Ontario Anime Society.
  *
  * All rights reserved.
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en-CA" className="h-screen min-h-screen">
       <body
-        className={`${inter.className} h-screen min-h-screen w-screen antialiased`}
+        className={`${inter.className} h-screen min-h-screen w-screen scroll-smooth antialiased`}
       >
         {/* <Navbar /> */}
         {children}

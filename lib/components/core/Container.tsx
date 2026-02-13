@@ -1,18 +1,27 @@
 /**
- * Copyright (c) 2026 Genshiken Festival / Ontario Anime Society
+ * Copyright (c) 2026 Genshiken Festival Organizing Committee Contributors and Artists.
+ * Copyright (c) 2026 Ontario Anime Society.
+ *
  * All rights reserved.
  */
 
 export default function Container({
   children,
-  isTopLevel = false,
+  className,
+  extended = false,
 }: Readonly<{
   children: React.ReactNode;
+  className?: string;
+  extended?: boolean;
   isTopLevel?: boolean;
 }>) {
   return (
     <div
-      className={`max-w-[75%] m-auto 2xl:max-w-640 2xl:px-80 xl:max-w-full xl:px-80 md:max-w-full md:px-20 font-sans ${isTopLevel ? "mt-25" : ""} container-full mx-auto`}
+      className={
+        extended
+          ? `mx-auto max-w-[100%] sm:px-24 2xl:max-w-[2560px] 2xl:px-80 ${className}`
+          : `mx-auto max-w-[75%] md:max-w-[100%] md:px-20 xl:max-w-[100%] xl:px-80 2xl:max-w-[2560px] 2xl:px-80 ${className}`
+      }
     >
       {children}
     </div>
