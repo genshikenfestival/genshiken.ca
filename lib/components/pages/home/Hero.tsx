@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="bg-brand-white overflow-clip bg-[url('/assets/hero-bg.png')] bg-cover bg-no-repeat lg:w-full">
         <Container
           extended
-          className="relative box-content flex h-[75vh] flex-col items-center justify-center md:box-border md:justify-between lg:flex-row"
+          className="relative box-content flex h-[85vh] flex-col items-center justify-center md:box-border md:justify-between lg:flex-row"
         >
           <div
             id="hero__genshiken-info"
