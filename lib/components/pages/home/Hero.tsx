@@ -21,13 +21,13 @@ export default function Hero() {
             id="hero__genshiken-info"
             className="flex flex-1 flex-col justify-center pt-24 lg:mt-0 lg:translate-y-0 lg:pt-0"
           >
-            <h1 className="font-brand lg:leading-auto text-center text-6xl font-black md:text-left md:text-8xl xl:text-8xl 2xl:text-9xl">
+            <h1 className="font-brand lg:leading-auto text-center text-6xl font-black md:text-8xl lg:text-left xl:text-8xl 2xl:text-9xl">
               Genshiken Festival
             </h1>
-            <h2 className="text-brand-purple mt-4 text-center text-xl font-light tracking-[20%] uppercase md:text-left lg:text-2xl xl:text-4xl">
+            <h2 className="text-brand-purple mt-4 text-center text-xl font-light tracking-[20%] uppercase lg:text-left lg:text-2xl xl:text-4xl">
               March 28, 2026
             </h2>
-            <p className="mt-4 text-center text-xs font-medium uppercase md:text-left lg:text-lg xl:text-xl">
+            <p className="mt-4 text-center text-xs font-medium uppercase lg:text-left lg:text-lg xl:text-xl">
               The Warehouse, Toronto, Ontario
             </p>
             <div className="xl:w-10.5/12 mt-12 hidden lg:block">

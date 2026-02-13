@@ -19,7 +19,7 @@ export default function Callout({
   className?: string;
 }>) {
   return (
-    <div className={`relative mx-auto mb-14 max-w-5xl ${className}`}>
+    <div className={`relative mx-auto mb-12 max-w-5xl ${className}`}>
       <div className="bg-brand-white border-brand-purple relative flex flex-col gap-4 rounded-2xl border-2 p-12">
         <Image
           className="absolute -top-12 -right-12 h-24 w-24 md:-top-18 md:-right-14 md:h-31.25 md:w-31.25"
