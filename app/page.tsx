@@ -18,14 +18,14 @@ export default function Home() {
     <main className="max-w-full flex-col items-center">
       <Hero />
       {/* <div className="min-h-[80vh]"></div> */}
-      <Container className="mt-20 mb-24">
+      <Container className="mt-20 mb-24 lg:mt-28">
         <Callout title="What is Genshiken?" className="">
           Genshiken Festival is a one-day convention organized by a variety of
           Ontario University Anime Clubs and brought to you by some of the same
           organizers as Ākēdo Festival! The Festival features Artist Alleys,
           Maid Cafe, Performances, and more!
         </Callout>
-        <Heading level="h2">Events</Heading>
+        <Heading level="h2">Features</Heading>
         <Paragraph>...Events go here</Paragraph>
 
         <div>

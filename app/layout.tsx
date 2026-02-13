@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en-CA" className="h-screen min-h-screen">
       <body
-        className={`${inter.className} h-screen min-h-screen w-screen scroll-smooth antialiased`}
+        className={`${inter.className} h-screen min-h-screen w-screen antialiased`}
       >
         {/* <Navbar /> */}
         {children}

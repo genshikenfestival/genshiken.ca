@@ -21,7 +21,7 @@ export default function Hero() {
             id="hero__genshiken-info"
             className="flex flex-1 flex-col justify-center pt-24 lg:mt-0 lg:translate-y-0 lg:pt-0"
           >
-            <h1 className="font-brand lg:leading-auto text-center text-6xl font-black md:text-8xl lg:text-left xl:text-8xl 2xl:text-9xl">
+            <h1 className="font-brand lg:leading-auto text-center text-6xl font-black md:text-8xl lg:text-left xl:text-8xl">
               Genshiken Festival
             </h1>
             <h2 className="text-brand-purple mt-4 text-center text-xl font-light tracking-[20%] uppercase lg:text-left lg:text-2xl xl:text-4xl">
@@ -32,8 +32,9 @@ export default function Hero() {
             </p>
             <div className="xl:w-10.5/12 mt-12 hidden lg:block">
               <CTA
+                href="/tickets"
                 className={
-                  "shadow-brand-purple/50 min-w-full shadow-xl data-hover:shadow-none"
+                  "shadow-brand-purple/50 min-w-full shadow-xl hover:shadow-none"
                 }
               >
                 Buy Tickets Now!
@@ -68,8 +69,9 @@ export default function Hero() {
         </Container>
       </div>
       <CTA
+        href="/tickets"
         className={
-          "z-10 -translate-y-8 shadow-2xl data-hover:shadow-2xs lg:hidden"
+          "shadow-brand-purple/50 z-10 max-w-[75%] -translate-y-8 shadow-2xl hover:shadow-2xs lg:hidden"
         }
       >
         Buy Tickets Now!

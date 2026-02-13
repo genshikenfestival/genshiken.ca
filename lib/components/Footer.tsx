@@ -14,23 +14,15 @@ export default function Footer() {
         <div className="">
           <p className="text-base font-bold uppercase lg:text-lg">
             &copy; {new Date().getFullYear()} Genshiken Festival Organizing
-            Committee
+            Committee, Volunteers and Artists
           </p>
-          <p className="text-base font-light uppercase lg:text-lg">
+          <p className="mt-1 text-sm font-light uppercase">
             &copy; {new Date().getFullYear()} Ontario Anime Society
           </p>
-          {/* NOTE: Development only -- Shows app version to help aid in debugging. */}
-          {process.env.APP_ENVIRONMENT === "DEVELOPMENT" ? (
-            <>
-              <p className="mt-2 font-mono text-base font-light uppercase opacity-25">
-                VERSION {process.env.COMMIT_HASH} 💜
-              </p>
-              <p className="mt-0 font-mono text-base font-light uppercase opacity-25">
-                This version is intended only for development enviroments. If
-                you see this on production, you&apos;ve screwed up.
-              </p>
-            </>
-          ) : null}
+          <p className="mt-4 font-mono text-xs font-light uppercase opacity-25">
+            VERSION {process.env.COMMIT_HASH} 💜 Designed with love {"(°◡°♡)"}{" "}
+            in Ontario
+          </p>
         </div>
         <div className="right-0 bottom-0 mt-24 flex items-center justify-between opacity-50 md:absolute md:justify-center">
           <Image
