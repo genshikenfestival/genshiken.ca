@@ -31,7 +31,7 @@ export default function Home() {
           <Paragraph>...Events go here</Paragraph>
         </section>
         <section className="flex flex-col gap-4 pb-12 lg:gap-12">
-          <Heading level="h2">When and Where?</Heading>
+          <Heading level="h2">Venue and Location</Heading>
 
           <div className="flex flex-col-reverse gap-8 lg:flex-row">
             <div className="lg:hidden">
@@ -45,14 +45,21 @@ export default function Home() {
               </Button>
             </div>
             <div className="lg:bg-brand-white relative flex flex-col justify-center rounded-2xl lg:flex-1 lg:p-8">
-              <div className="flex flex-col gap-1.5 lg:-translate-y-4">
-                <p className="text-xl font-bold lg:text-2xl">
+              <div className="flex flex-col gap-2 lg:-translate-y-8">
+                {/* <p className="font-light tracking-[20%] uppercase opacity-80 lg:ml-1 lg:-translate-y-6 lg:text-xl">
+                  March 28th, 2026 at
+                </p> */}
+                <p className="text-xl leading-relaxed font-bold lg:text-2xl">
+                  <span className="text-brand-purple">
+                    March 28, 2026 @ &nbsp;
+                    <br className="hidden lg:block" />
+                  </span>
                   The Warehouse Venue
                 </p>
                 <p className="italic lg:text-lg">
                   35 Carl Hall Rd #2, North York, ON M3K 2E2
                 </p>
-                <p className="text-brand-purple text-sm uppercase lg:text-base">
+                <p className="text-sm font-light tracking-[5%] uppercase lg:text-base">
                   Located in Downsview Park
                 </p>
               </div>

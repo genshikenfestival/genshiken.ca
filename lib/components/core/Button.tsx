@@ -26,7 +26,7 @@ export default function Button({
     <Link
       href={href}
       target={target}
-      className={`bg-brand-purple center group block w-full rounded-2xl px-16 py-4 text-center text-lg text-white transition-all duration-200 hover:cursor-pointer hover:bg-gray-500 active:bg-gray-500 ${className ?? ""}`}
+      className={`bg-brand-purple center group block w-full rounded-2xl py-4 text-center text-lg text-white transition-all duration-200 hover:cursor-pointer hover:bg-gray-500 active:bg-gray-500 lg:px-16 ${className ?? ""}`}
     >
       {children}
       {showIcon ? (
