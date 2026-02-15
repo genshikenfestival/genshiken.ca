@@ -16,17 +16,19 @@ export default function CTA({
   return href ? (
     <Link
       href={href}
-      className={`bg-brand-purple center group block w-full rounded-2xl px-16 py-4 text-center text-lg font-semibold text-white transition-all duration-200 hover:cursor-pointer hover:bg-gray-500 active:bg-gray-500 ${className ?? ""}`}
+      className={`bg-brand-purple center group relative block w-full rounded-2xl px-16 py-4 text-center text-lg font-semibold text-white transition-all duration-200 hover:cursor-pointer hover:bg-gray-500 active:bg-gray-500 ${className ?? ""}`}
     >
       {children}
-      <i className="bi bi-arrow-right ml-1 translate-y-5"></i>
+
+      <i className="bi bi-arrow-right ml-2 text-xl"></i>
     </Link>
   ) : (
     <Button
-      className={`bg-brand-purple center group rounded-2xl px-16 py-4 text-lg font-semibold text-white transition-all duration-200 data-active:bg-gray-500 data-hover:cursor-pointer data-hover:bg-gray-500 ${className ?? ""}`}
+      className={`bg-brand-purple center group relative rounded-2xl px-16 py-4 text-lg font-semibold text-white transition-all duration-200 data-active:bg-gray-500 data-hover:cursor-pointer data-hover:bg-gray-500 ${className ?? ""}`}
     >
       {children}
-      <i className="bi bi-arrow-right ml-1 translate-y-5"></i>
+
+      <i className="bi bi-arrow-right ml-2 text-xl"></i>
     </Button>
   );
 }

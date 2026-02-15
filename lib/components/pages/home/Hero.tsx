@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026 Genshiken Festival, Contributors, Artists and Volunteers.
+ *Copyright (c) 2026 Genshiken Festival Organizing Committee, Contributors and Artists.
  * Copyright (c) 2026 Ontario Anime Society.
  *
  * All rights reserved.
@@ -7,7 +7,7 @@
 
 import CTA from "@/lib/components/core/CTA";
 import Image from "next/image";
-import Container from "../../core/Container";
+import Container from "@/lib/components/core/Container";
 
 export default function Hero() {
   return (
@@ -28,7 +28,7 @@ export default function Hero() {
               March 28, 2026
             </h2>
             <p className="mt-4 text-center text-xs font-medium uppercase lg:text-left lg:text-lg xl:text-xl">
-              The Warehouse, Toronto, Ontario
+              The Warehouse Venue, Toronto, Ontario
             </p>
             <div className="xl:w-10.5/12 mt-12 hidden lg:block">
               <CTA

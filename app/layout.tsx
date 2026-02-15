@@ -13,13 +13,15 @@ import Footer from "@/lib/components/Footer";
 const inter = Inter({
   subsets: ["latin"],
 });
+
 const fredoka = Fredoka({
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "Genshiken Festival 2026",
-  description: ".",
+  description:
+    "A 1-Day anime convention hosted by Ontario Universities Anime Clubs & Students!",
 };
 
 export default function RootLayout({

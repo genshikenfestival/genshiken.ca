@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026 Genshiken Festival, Contributors, Artists and Volunteers.
+ * Copyright (c) 2026 Genshiken Festival Organizing Committee, Contributors and Artists.
  * Copyright (c) 2026 Ontario Anime Society.
  *
  * All rights reserved.
@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="min-w-screen">
-      <div className="bg-brand-white inset-shadow-brand-purple/50 relative flex min-h-72 flex-col overflow-clip px-12 pt-24 inset-shadow-xs sm:min-h-48 md:justify-center md:px-32 md:pt-0">
+      <div className="bg-brand-white inset-shadow-brand-purple/50 relative flex min-h-72 flex-col overflow-clip px-12 pt-24 inset-shadow-xs sm:min-h-48 sm:px-32 md:justify-center md:pt-0">
         <div className="">
           <p className="text-base font-bold uppercase lg:text-lg">
             &copy; {new Date().getFullYear()} Genshiken Festival Organizing
@@ -20,8 +20,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Ontario Anime Society
           </p>
           <p className="mt-4 font-mono text-xs font-light uppercase opacity-25">
-            VERSION {process.env.COMMIT_HASH} 💜 Designed with love {"(°◡°♡)"}{" "}
-            in Ontario
+            VERSION {process.env.COMMIT_HASH} 💜 Developed and Designed with
+            love {"(°◡°♡)"} in Ontario
           </p>
         </div>
         <div className="right-0 bottom-0 mt-24 flex items-center justify-between opacity-50 md:absolute md:justify-center">
