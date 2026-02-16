@@ -19,7 +19,11 @@ export default function Heading({
 }: HeadingProps) {
   switch (level) {
     case "h1":
-      return <h1 className={`${className}`}>{children}</h1>;
+      return (
+        <h1 className={`font-brand text-6xl font-bold ${className}`}>
+          {children}
+        </h1>
+      );
     case "h2":
       return (
         <h2
