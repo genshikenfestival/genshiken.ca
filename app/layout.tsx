@@ -7,8 +7,13 @@
 
 import type { Metadata } from "next";
 import { Inter, Fredoka } from "next/font/google";
-import "./globals.css";
+
+import { ALL_NAVIGATION } from "@/config/navigation.config";
+
 import Footer from "@/lib/components/Footer";
+import Navbar from "@/lib/components/Navbar";
+
+import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,7 +39,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} h-screen min-h-screen w-screen antialiased`}
       >
-        {/* <Navbar /> */}
+        <Navbar items={ALL_NAVIGATION} />
         {children}
         <Footer />
       </body>

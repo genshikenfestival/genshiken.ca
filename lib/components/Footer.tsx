@@ -14,14 +14,14 @@ export default function Footer() {
         <div className="">
           <p className="text-base font-bold uppercase lg:text-lg">
             &copy; {new Date().getFullYear()} Genshiken Festival Organizing
-            Committee, Volunteers and Artists
+            Committee, Contributors and Artists.
           </p>
           <p className="mt-1 text-sm font-light uppercase">
             &copy; {new Date().getFullYear()} Ontario Anime Society
           </p>
           <p className="mt-4 font-mono text-xs font-light uppercase opacity-25">
-            VERSION {process.env.COMMIT_HASH} 💜 Developed and Designed with
-            love {"(°◡°♡)"} in Ontario
+            WEBSITE VERSION {process.env.COMMIT_HASH} 💜 Developed and Designed
+            with love in Ontario
           </p>
         </div>
         <div className="right-0 bottom-0 mt-24 flex items-center justify-between opacity-50 md:absolute md:justify-center">

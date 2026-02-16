@@ -12,6 +12,7 @@ import Heading from "@/lib/components/core/typography/Heading";
 import Paragraph from "@/lib/components/core/typography/Paragraph";
 import Maps from "@/lib/components/Maps";
 import Hero from "@/lib/components/pages/home/Hero";
+
 import { createMetadata } from "@/lib/utils/createMetadata";
 
 export const metadata = createMetadata({ title: "2026" });
@@ -27,7 +28,7 @@ export default function Home() {
           Maid Cafe, Performances, and more!
         </Callout>
         <section>
-          <Heading level="h2">Features</Heading>
+          <Heading level="h2">Events</Heading>
           <Paragraph>...Events go here</Paragraph>
         </section>
         <section className="flex flex-col gap-4 pb-12 lg:gap-12">
