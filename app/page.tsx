@@ -10,6 +10,7 @@ import Button from "@/lib/components/core/Button";
 import Container from "@/lib/components/core/Container";
 import Heading from "@/lib/components/core/typography/Heading";
 import Paragraph from "@/lib/components/core/typography/Paragraph";
+import EventCard from "@/lib/components/EventCard";
 import Maps from "@/lib/components/Maps";
 import Hero from "@/lib/components/pages/home/Hero";
 
@@ -27,9 +28,52 @@ export default function Home() {
           organizers as Ākēdo Festival! The Festival features Artist Alleys,
           Maid Cafe, Performances, and more!
         </Callout>
-        <section>
+        <section className="pb-12">
           <Heading level="h2">Events</Heading>
-          <Paragraph>...Events go here</Paragraph>
+          <div className="mt-12 grid max-h-[70vh] min-w-full grid-flow-col grid-rows-4 gap-4 md:grid-rows-3">
+            <EventCard
+              className="col-span-2 md:col-auto md:max-w-full"
+              eventName="Maid Cafe"
+              image={{
+                src: "/assets/events/phillp-mc-haru-aki-edit-genfest-24.webp",
+                width: 1920,
+                height: 1080,
+              }}
+            />
+            <EventCard
+              className="col-span-2 md:col-auto md:max-w-full"
+              eventName="Genshiken Idol"
+              image={{
+                src: "/assets/events/phillp-gi-genfest-24.jpg",
+                width: 3177,
+                height: 1667,
+                className:
+                  "h-full min-h-full w-full min-w-full object-cover object-top",
+              }}
+            />
+            <EventCard
+              className="col-span-2 md:col-auto md:max-w-full"
+              eventName="Cosplay Contest"
+              image={{
+                src: "/assets/events/phillp-cc-genfest-24.jpg",
+                width: 3177,
+                height: 1667,
+                className:
+                  "h-full min-h-full w-full min-w-full object-cover object-top",
+              }}
+            />
+            <EventCard
+              eventName="Artist Alley"
+              className="col-span-2 md:row-span-3"
+              image={{
+                src: "/assets/events/phillp-aa-genfest-24.jpg",
+                width: 3177,
+                height: 1667,
+                className:
+                  "h-full min-h-full w-full min-w-full object-cover object-center",
+              }}
+            />
+          </div>
         </section>
         <section className="flex flex-col gap-4 pb-12 lg:gap-12">
           <Heading level="h2">Venue and Location</Heading>
@@ -52,7 +96,7 @@ export default function Home() {
                 </p> */}
                 <p className="text-xl leading-relaxed font-bold lg:text-2xl">
                   <span className="text-brand-purple">
-                    March 28, 2026 @ &nbsp;
+                    March 28, 2026, 11:00AM - 7:00PM @&nbsp;
                     <br className="hidden lg:block" />
                   </span>
                   The Warehouse Venue
