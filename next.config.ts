@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
   env: {
     COMMIT_HASH: commitHash,
   },
+  images: {
+    unoptimized: true, //I hate nexts docs, this needs to be set for static output to work.
+  },
 };
 
 export default nextConfig;
