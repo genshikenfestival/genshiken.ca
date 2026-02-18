@@ -12,9 +12,7 @@ const nextConfig: NextConfig = {
     APP_ENVIRONMENT: "DEVELOPMENT",
   },
   images: {
-    // minimumCacheTTL: 14400, // 4 hours
-    minimumCacheTTL: 0, // 4 hours
-    qualities: [75, 100],
+    qualities: [100],
   },
 };
 

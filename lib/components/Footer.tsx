@@ -28,7 +28,7 @@ export default function Footer() {
           <Image
             loading="lazy"
             className="-ml-14 max-w-25 md:ml-0 xl:max-w-34"
-            src={"/assets/mascot/chibi/haruheart.png"}
+            src={"/assets/mascot/chibi/haruheart.webp"}
             width={150}
             height={150}
             alt=""
@@ -36,7 +36,7 @@ export default function Footer() {
           <Image
             loading="lazy"
             className="-mr-14 max-w-25 md:mr-0 xl:max-w-34"
-            src={"/assets/mascot/chibi/akiheart.png"}
+            src={"/assets/mascot/chibi/akiheart.webp"}
             width={150}
             height={150}
             alt=""

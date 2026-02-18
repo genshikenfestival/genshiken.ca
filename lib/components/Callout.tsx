@@ -23,7 +23,7 @@ export default function Callout({
       <div className="bg-brand-white border-brand-purple relative flex flex-col gap-4 rounded-2xl border-2 p-12">
         <Image
           className="absolute -top-12 -right-12 h-24 w-24 md:-top-18 md:-right-14 md:h-31.25 md:w-31.25"
-          src={"/assets/mascot/chibi/aki-mug.png"}
+          src={"/assets/mascot/chibi/aki-mug.webp"}
           alt=""
           height={125}
           width={125}
@@ -33,7 +33,7 @@ export default function Callout({
       </div>
       <Image
         className="absolute -bottom-9.5 -left-6.5 h-24 w-24 md:-bottom-12 md:-left-8 md:h-31.25 md:w-31.25"
-        src={"/assets/flowers.png"}
+        src={"/assets/flowers.webp"}
         alt=""
         height={125}
         width={125}

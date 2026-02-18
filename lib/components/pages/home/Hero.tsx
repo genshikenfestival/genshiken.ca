@@ -12,7 +12,7 @@ import Container from "@/lib/components/core/Container";
 export default function Hero() {
   return (
     <div className="flex w-full flex-col items-center">
-      <div className="bg-brand-white overflow-clip bg-[url('/assets/hero-bg.png')] bg-cover bg-no-repeat lg:w-full">
+      <div className="bg-brand-white overflow-clip bg-[url('/assets/hero-bg.webp')] bg-cover bg-no-repeat lg:w-full">
         <Container
           extended
           className="relative box-content flex h-[80vh] flex-col items-center justify-center md:box-border md:justify-between lg:flex-row"
@@ -47,20 +47,20 @@ export default function Hero() {
           >
             <Image
               quality={100}
-              preload
+              preload={true}
               className={"flex self-center justify-self-center lg:hidden"}
-              src={"/assets/mascot/haru-and-aki-hero-mobile.png"}
+              src={"/assets/mascot/haru-and-aki-hero-mobile.webp"}
               alt=""
               width={1722}
               height={2868}
             />
             <Image
               quality={100}
-              preload
+              preload={true}
               className={
                 "hidden lg:block lg:translate-y-4/24 2xl:translate-y-4/24"
               }
-              src={"/assets/mascot/haru-and-aki-hero.png"}
+              src={"/assets/mascot/haru-and-aki-hero.webp"}
               alt=""
               width={1722}
               height={2868}

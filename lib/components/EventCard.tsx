@@ -39,6 +39,7 @@ export default function EventCard({
           src={image.src}
           height={image.height}
           width={image.width}
+          loading="lazy"
           alt=""
           className={
             image.className ??

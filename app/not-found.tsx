@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) 2026 Genshiken Festival Organizing Committee, Contributors and Artists.
+ * Copyright (c) 2026 Ontario Anime Society.
+ *
+ * All rights reserved.
+ */
+
 import Button from "@/lib/components/core/Button";
 import Container from "@/lib/components/core/Container";
 import { createMetadata } from "@/lib/utils/createMetadata";
@@ -11,8 +18,8 @@ export default function NotFound() {
         <div className="mb-12 flex w-full justify-center">
           <Image
             alt="Haru, standing against a blue background with a his head clean shaven showing a sparkle. In the distance there is seemingly a ghost of his hair floating up. The caption reads 'I want my hair back' signed, Haru."
-            src={"/assets/mascot/haru_postcard-hairless.tiff"}
-            height={400}
+            src={"/assets/mascot/haru_postcard-hairless.webp"}
+            height={600}
             width={300}
           />
         </div>

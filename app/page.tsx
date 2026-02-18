@@ -44,7 +44,7 @@ export default function Home() {
               className="col-span-2 md:col-auto md:max-w-full"
               eventName="Genshiken Idol"
               image={{
-                src: "/assets/events/phillp-gi-genfest-24.jpg",
+                src: "/assets/events/phillp-gi-genfest-24.webp",
                 width: 3177,
                 height: 1667,
                 className:
@@ -55,7 +55,7 @@ export default function Home() {
               className="col-span-2 md:col-auto md:max-w-full"
               eventName="Cosplay Contest"
               image={{
-                src: "/assets/events/phillp-cc-genfest-24.jpg",
+                src: "/assets/events/phillp-cc-genfest-24.webp",
                 width: 3177,
                 height: 1667,
                 className:
@@ -66,7 +66,7 @@ export default function Home() {
               eventName="Artist Alley"
               className="col-span-2 md:row-span-3"
               image={{
-                src: "/assets/events/phillp-aa-genfest-24.jpg",
+                src: "/assets/events/phillp-aa-genfest-24.webp",
                 width: 3177,
                 height: 1667,
                 className:
