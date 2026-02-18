@@ -145,6 +145,8 @@ export default function Home() {
         type: "Event",
         name: "Genshiken Festival 2026",
         alternateName: "Genshiken Festival 2026",
+        description:
+          "Genshiken Festival is a one-day convention organized by students from a variety of Ontario University Anime Clubs and brought to you by some of the same organizers as Ākēdo Festival! The Festival features Artist Alleys, Maid Cafe, Performances, and more!",
         image: "https://genshiken.ca/ogp.png",
         url: "https://genshiken.ca/",
         typeSpecific: {
@@ -159,6 +161,10 @@ export default function Home() {
             region: "Ontario",
             country: "Canada",
             postalCode: "M3K 2E2",
+          },
+          organization: {
+            name: "Genshiken Festival Organizing Committee & Ontario Anime Society",
+            url: "https://genshiken.ca",
           },
         },
       })}

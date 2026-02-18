@@ -66,6 +66,7 @@ const createJSON_LD = ({
   alternateName,
   image,
   url,
+  description,
   typeSpecific,
 }: jsonLDProps) => {
   let JSONLD = {};
@@ -80,6 +81,7 @@ const createJSON_LD = ({
       endDate: typeSpecific.endDate,
       eventAttendanceMode: typeSpecific.eventAttendanceMode,
       eventStatus: typeSpecific.eventStatus,
+      description: description,
       location: [
         // {
         //   "@type": "VirtualLocation",
@@ -98,6 +100,11 @@ const createJSON_LD = ({
           },
         },
       ],
+      organizer: {
+        "@type": "Organization",
+        name: typeSpecific.organization.name,
+        url: typeSpecific.organization.url,
+      },
       image: image,
       url: url,
     };
@@ -123,6 +130,7 @@ type jsonLDProps = {
   alternateName: string;
   image: Url;
   url: Url;
+  description: string;
   typeSpecific: {
     startDate: string | Date;
     endDate: string | Date;
@@ -141,6 +149,10 @@ type jsonLDProps = {
       region: string;
       country: string;
       postalCode: string;
+    };
+    organization: {
+      name: string;
+      url: string;
     };
   };
 };
