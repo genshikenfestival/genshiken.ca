@@ -11,7 +11,8 @@ const nextConfig: NextConfig = {
     COMMIT_HASH: commitHash,
   },
   images: {
-    unoptimized: true, //I hate nexts docs, this needs to be set for static output to work.
+    qualities: [100, 75],
+    // unoptimized: true, //I hate nexts docs, this needs to be set for static output to work.
   },
 };
 

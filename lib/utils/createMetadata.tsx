@@ -1,3 +1,9 @@
+/**
+ * Adapted from ASSETS 2024's createMetadata.js:
+ * @see: https://github.com/ASSETS-Conference/assets2024/blob/main/src/app/lib/utils/createMetadata.js
+ *
+ */
+
 import { Url } from "jsonld/jsonld-spec";
 import { Metadata } from "next";
 
@@ -12,7 +18,7 @@ const createMetadata = ({ title }: createMetadataProps) => {
   const md: Metadata = {
     title: `Genshiken Festival - ${title}`,
     description:
-      "A 1-Day anime convention hosted by Ontario Universities Anime Clubs & Students!",
+      "A 1-Day anime convention hosted by Students from various University Anime Clubs across Ontario!",
     keywords: [
       "Genshiken",
       "Genshiken Festival",
@@ -26,7 +32,7 @@ const createMetadata = ({ title }: createMetadataProps) => {
       url: "https://genshiken.ca/",
       title: `Genshiken Festival - ${title}`,
       description:
-        "A 1-Day anime convention hosted by Ontario Universities Anime Clubs & Students!",
+        "A 1-Day anime convention hosted by Students from various University Anime Clubs across Ontario!",
       siteName: "Genshiken Festival",
       images: [
         {
@@ -40,7 +46,7 @@ const createMetadata = ({ title }: createMetadataProps) => {
       creator: "@GenshikenFes",
       title: `Genshiken Festival - ${title}`,
       description:
-        "A 1-Day anime convention hosted by Ontario Universities Anime Clubs & Students!",
+        "A 1-Day anime convention hosted by Students from various University Anime Clubs across Ontario!",
       images: "https://genshiken.preview.surajgoraya.ca/ogp.png",
     },
   };
@@ -128,7 +134,7 @@ type jsonLDProps = {
       | "https://schema.org/EventScheduled"
       | "https://schema.org/EventCancelled";
     location: {
-      virtualLocationURL: Url | undefined;
+      virtualLocationURL?: string;
       name: string;
       streetAddress: string;
       locality: string;
