@@ -8,4 +8,8 @@
   "assets": {
     "directory": ".open-next/assets",
   },
+  "route": {
+    "pattern": "genshiken.ca",
+    "custom_domain": true,
+  },
 }
