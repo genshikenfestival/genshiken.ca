@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# genshiken.ca
+
+<img style="display: block; margin: 0 auto" src="./public/assets/logos/gf-logo-condensed-outline.png" height=200 alt="Genshiken Festival Logo"/>
+
+Genshiken Festival is a one-day convention organized by students from a variety of Ontario University Anime Clubs and brought to you by some of the same organizers as Ākēdo Festival! The Festival features Artist Alleys, Maid Cafe, Performances, and more!
+
+This repository contains the code for the main front-end site used for Genshiken! The website is built in NextJS, Typescript, and Tailwind.
+
+For the development environment, we prefer using `pnpm` as well as Visual Studio Code with the `cspell`, and `prettier` plugins installed. Please enable format on save in VS Code for this project.
 
 ## Getting Started
 
-First, run the development server:
+To get started with development:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Get all deps.
+pnpm install
+
+# Run the NextJS dev server
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) to see the development version of the app!
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more, take a look at the following resources:
 
+- [`pnpm` Install and Documentation](https://pnpm.io/) - learn how to install and use `pnpm` instead of `npm`.
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Tailwind Documentation](https://tailwindcss.com/) - learn about tailwind and how to use it.
+- [Google's WebP Image Format](https://developers.google.com/speed/webp) - Given the heavy use of images, this website employs using Google's `webp` format to reduce transfer sizes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploying
 
-## Deploy on Vercel
+Please reach out over discord in the `#website-general` channel!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div style="display: flex; width: 100%; justify-content: center;">
+<img style="display: block;" src="./public/assets/mascot/chibi/haruheart.webp" height=200 alt="Haru, Genshiken's mascot holding a big red heart with a gleeful look on his face."/>
+<img style="display: block;" src="./public/assets/mascot/chibi/akiheart.webp" height=200 alt="Aki, Genshiken's mascot holding a big purple heart with a gleeful look on her face."/>
+<div>
