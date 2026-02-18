@@ -20,6 +20,10 @@ _docs
 /.next/
 /out/
 
+# Open Next (shout out Vercel for making this hard)
+.open-next/
+.wrangler/
+
 # production
 /build
 
