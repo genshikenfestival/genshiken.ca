@@ -32,7 +32,7 @@ export default function EventCard({
     >
       <a href={href}>
         <div className="group-hover:bg-brand-purple absolute h-full w-full bg-transparent opacity-75 mix-blend-screen transition-all duration-200" />
-        <p className="bg-brand-purple group-hover:text-brand-purple absolute bottom-4 rounded-br-2xl px-8 py-4 font-bold text-white uppercase group-hover:bg-black">
+        <p className="bg-brand-purple group-hover:text-brand-purple absolute bottom-4 rounded-br-2xl px-4 py-2 text-sm font-bold text-white uppercase group-hover:bg-black md:px-8 md:py-4 md:text-base">
           {eventName}
         </p>
         <Image

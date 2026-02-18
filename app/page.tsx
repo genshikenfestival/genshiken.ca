@@ -23,10 +23,10 @@ export default function Home() {
       <Hero />
       <Container className="mt-20 flex flex-col gap-12 lg:mt-24">
         <Callout title="What is Genshiken?" className="mb-8">
-          Genshiken Festival is a one-day convention organized by a variety of
-          Ontario University Anime Clubs and brought to you by some of the same
-          organizers as Ākēdo Festival! The Festival features Artist Alleys,
-          Maid Cafe, Performances, and more!
+          Genshiken Festival is a one-day convention organized by students from
+          a variety of Ontario University Anime Clubs and brought to you by some
+          of the same organizers as Ākēdo Festival! The Festival features Artist
+          Alleys, Maid Cafe, Performances, and more!
         </Callout>
         <section className="pb-12">
           <Heading level="h2">Events</Heading>

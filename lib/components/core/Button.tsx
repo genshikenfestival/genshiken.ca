@@ -15,18 +15,20 @@ export default function Button({
   target,
   children,
   showIcon,
+  isGhost,
 }: Readonly<{
   children: React.ReactNode;
   className?: string;
   href?: string;
   target?: HTMLAttributeAnchorTarget;
   showIcon?: string;
+  isGhost?: boolean;
 }>) {
   return href ? (
     <Link
       href={href}
       target={target}
-      className={`bg-brand-purple center group block w-full rounded-2xl py-4 text-center text-lg text-white transition-all duration-200 hover:cursor-pointer hover:bg-gray-500 active:bg-gray-500 lg:px-16 ${className ?? ""}`}
+      className={`bg-brand-purple center group block w-full rounded-2xl py-4 text-center text-lg text-white transition-all duration-200 hover:cursor-pointer hover:bg-gray-500 active:bg-gray-500 lg:px-16 ${className ?? ""} ${isGhost ? "border-brand-purple !text-brand-purple hover:!bg-brand-purple border-2 !bg-transparent hover:!text-white" : ""}`}
     >
       {children}
       {showIcon ? (
