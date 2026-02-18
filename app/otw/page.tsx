@@ -20,7 +20,7 @@ export default function OnTheWay() {
         <div className="mb-12 flex w-full justify-center">
           <Image
             alt="Haru, in a miniature chibi style holding up his thumb in a thumbs-up position looking ecstatic."
-            src={"/assets/mascot/chibi/haru-thumbs-up.png"}
+            src={"/assets/mascot/chibi/haru-thumbs-up.webp"}
             height={600}
             width={300}
           />
