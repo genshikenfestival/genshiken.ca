@@ -24,15 +24,17 @@ export default function EventCard({
   eventName,
   href,
   image,
-  children,
 }: EventCardProps) {
   return (
     <div
       className={`group relative w-full cursor-pointer rounded-2xl ${className ?? ""}`}
     >
-      <a href={href}>
+      <a href={href} aria-label={eventName}>
         <div className="group-hover:bg-brand-purple absolute h-full w-full bg-transparent opacity-75 mix-blend-screen transition-all duration-200" />
-        <p className="bg-brand-purple group-hover:text-brand-purple absolute bottom-4 rounded-br-2xl px-4 py-2 text-sm font-bold text-white uppercase group-hover:bg-black md:px-8 md:py-4 md:text-base">
+        <p
+          className="bg-brand-purple group-hover:text-brand-purple absolute bottom-4 rounded-br-2xl px-4 py-2 text-sm font-bold text-white uppercase group-hover:bg-black md:px-8 md:py-4 md:text-base"
+          aria-hidden
+        >
           {eventName}
         </p>
         <Image
@@ -40,7 +42,7 @@ export default function EventCard({
           height={image.height}
           width={image.width}
           loading="lazy"
-          alt=""
+          alt="" //Image is decorative
           className={
             image.className ??
             `h-full min-h-full w-full min-w-full object-cover object-top`

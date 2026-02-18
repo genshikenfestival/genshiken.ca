@@ -9,7 +9,6 @@ import Callout from "@/lib/components/Callout";
 import Button from "@/lib/components/core/Button";
 import Container from "@/lib/components/core/Container";
 import Heading from "@/lib/components/core/typography/Heading";
-import Paragraph from "@/lib/components/core/typography/Paragraph";
 import EventCard from "@/lib/components/EventCard";
 import Maps from "@/lib/components/Maps";
 import Hero from "@/lib/components/pages/home/Hero";
@@ -30,10 +29,14 @@ export default function Home() {
         </Callout>
         <section className="pb-12">
           <Heading level="h2">Events</Heading>
-          <div className="mt-12 grid max-h-[70vh] min-w-full grid-flow-col grid-rows-4 gap-4 md:grid-rows-3">
+          <p className="mt-4 block md:mt-8 md:hidden md:text-lg">
+            Want to learn more or Volunteer? Tap on the events below:
+          </p>
+          <div className="mt-8 grid max-h-[70vh] min-w-full grid-flow-col grid-rows-4 gap-4 md:grid-rows-3">
             <EventCard
               className="col-span-2 md:col-auto md:max-w-full"
               eventName="Maid Cafe"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfd6U6xYt4YhpGc_lpb1ugTcYxmLGnz8OPr3Pds8ZL8dUBfqA/viewform?usp=publish-editor"
               image={{
                 src: "/assets/events/phillp-mc-haru-aki-edit-genfest-24.webp",
                 width: 1920,
@@ -43,6 +46,7 @@ export default function Home() {
             <EventCard
               className="col-span-2 md:col-auto md:max-w-full"
               eventName="Genshiken Idol"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSesY8iDBZer1LPre7YbFjHEoM0QrcFwPQRfdQRc4Tpwn6OpUw/viewform?usp=publish-editor"
               image={{
                 src: "/assets/events/phillp-gi-genfest-24.webp",
                 width: 3177,
@@ -53,6 +57,7 @@ export default function Home() {
             />
             <EventCard
               className="col-span-2 md:col-auto md:max-w-full"
+              href="/otw"
               eventName="Cosplay Contest"
               image={{
                 src: "/assets/events/phillp-cc-genfest-24.webp",
@@ -65,6 +70,7 @@ export default function Home() {
             <EventCard
               eventName="Artist Alley"
               className="col-span-2 md:row-span-3"
+              href="https://www.instagram.com/genshikenfestival/"
               image={{
                 src: "/assets/events/phillp-aa-genfest-24.webp",
                 width: 3177,

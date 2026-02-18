@@ -32,9 +32,9 @@ export default function Hero() {
             </p>
             <div className="xl:w-10.5/12 mt-12 hidden lg:block">
               <CTA
-                href="/tickets"
+                href="/otw"
                 className={
-                  "shadow-brand-purple/50 min-w-full shadow-xl hover:shadow-none"
+                  "shadow-brand-purple/50 min-w-full shadow-xl hover:shadow-none focus:shadow-none"
                 }
               >
                 Buy Tickets Now!
@@ -69,9 +69,9 @@ export default function Hero() {
         </Container>
       </div>
       <CTA
-        href="/tickets"
+        href="/otw"
         className={
-          "shadow-brand-purple/50 z-10 max-w-[75%] -translate-y-8 shadow-2xl hover:shadow-2xs lg:hidden"
+          "shadow-brand-purple/50 z-10 max-w-[75%] -translate-y-8 shadow-2xl hover:shadow-2xs focus:shadow-none lg:hidden"
         }
       >
         Buy Tickets Now!
