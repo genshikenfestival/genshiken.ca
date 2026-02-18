@@ -7,12 +7,10 @@ const commitHash = execSync('git log --pretty=format:"%h" -n1')
   .trim();
 
 const nextConfig: NextConfig = {
+  output: "export",
+  trailingSlash: true, //  Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   env: {
     COMMIT_HASH: commitHash,
-    APP_ENVIRONMENT: "DEVELOPMENT",
-  },
-  images: {
-    qualities: [100],
   },
 };
 
