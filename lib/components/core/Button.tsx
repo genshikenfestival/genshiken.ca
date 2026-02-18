@@ -28,7 +28,7 @@ export default function Button({
     <Link
       href={href}
       target={target}
-      className={`bg-brand-purple center group block w-full rounded-2xl py-4 text-center text-lg text-white transition-all duration-200 hover:cursor-pointer hover:bg-gray-500 focus:bg-gray-500 active:bg-gray-500 lg:px-16 ${className ?? ""} ${isGhost ? "border-brand-purple !text-brand-purple focus:!bg-brand-purple hover:!bg-brand-purple border-2 !bg-transparent hover:!text-white focus:!text-white" : ""}`}
+      className={`bg-brand-purple center group block w-full rounded-2xl py-4 text-center text-lg text-white transition-all duration-200 hover:cursor-pointer hover:bg-gray-500 focus:bg-gray-500 active:bg-gray-500 lg:px-16 ${className ?? ""} ${isGhost ? "border-brand-purple text-brand-purple! focus:bg-brand-purple! hover:bg-brand-purple! border-2 bg-transparent! hover:text-white! focus:text-white!" : ""}`}
     >
       {children}
       {showIcon ? (
