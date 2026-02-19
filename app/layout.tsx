@@ -39,7 +39,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} h-screen min-h-screen w-screen antialiased`}
       >
-        <Navbar items={ALL_NAVIGATION} />
+        {/* <Navbar items={ALL_NAVIGATION} /> */}
         {children}
         <Footer />
       </body>

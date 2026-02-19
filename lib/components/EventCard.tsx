@@ -26,30 +26,31 @@ export default function EventCard({
   image,
 }: EventCardProps) {
   return (
-    <div
-      className={`group relative w-full cursor-pointer rounded-2xl ${className ?? ""}`}
+    <a
+      href={href}
+      aria-label={eventName}
+      className={`group ring-brand-purple relative w-full cursor-pointer ring-4 group-focus-within:ring-black group-hover:ring-black group-active:ring-black ${className ?? ""}`}
     >
-      <a href={href} aria-label={eventName}>
-        <div className="group-hover:bg-brand-purple absolute h-full w-full bg-transparent opacity-75 mix-blend-screen transition-all duration-200" />
-        <p
-          className="bg-brand-purple group-hover:text-brand-purple absolute bottom-4 rounded-br-2xl px-4 py-2 text-sm font-bold text-white uppercase group-hover:bg-black md:px-8 md:py-4 md:text-base"
-          aria-hidden
-        >
-          {eventName}
-        </p>
-        <Image
-          src={image.src}
-          height={image.height}
-          width={image.width}
-          loading="lazy"
-          alt="" //Image is decorative
-          className={
-            image.className ??
-            `h-full min-h-full w-full min-w-full object-cover object-top`
-          }
-        />
-        {/* {children} */}
-      </a>
-    </div>
+      <div className="group-hover:bg-brand-purple group-active:bg-brand-purple group-focus-within:bg-brand-purple absolute h-full w-full bg-transparent opacity-75 mix-blend-screen transition-all duration-200" />
+      <p
+        className="bg-brand-purple group-hover:text-brand-purple group-focus-within:text-brand-purple group-active:text-brand-purple group-active::bg-black absolute bottom-4 rounded-br-2xl px-4 py-2 text-sm font-bold text-white uppercase group-focus-within:bg-black group-hover:bg-black md:py-2 md:text-base xl:px-8"
+        aria-hidden
+      >
+        {eventName}
+        <i className="bi bi-arrow-right ml-1"></i>
+      </p>
+      <Image
+        src={image.src}
+        height={image.height}
+        width={image.width}
+        loading="lazy"
+        alt="" //Image is decorative
+        className={
+          image.className ??
+          `h-full min-h-full w-full min-w-full object-cover object-top`
+        }
+      />
+      {/* {children} */}
+    </a>
   );
 }

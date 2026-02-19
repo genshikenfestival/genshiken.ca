@@ -5,6 +5,7 @@
  * All rights reserved.
  */
 
+import Banner from "@/lib/components/Banner";
 import Callout from "@/lib/components/Callout";
 import Button from "@/lib/components/core/Button";
 import Container from "@/lib/components/core/Container";
@@ -19,6 +20,10 @@ export const metadata = createMetadata({ title: "2026" });
 export default function Home() {
   return (
     <>
+      <Banner
+        text={"Genshiken Idol Performance Applications Open! – APPLY NOW"}
+        href="https://docs.google.com/forms/d/e/1FAIpQLSesY8iDBZer1LPre7YbFjHEoM0QrcFwPQRfdQRc4Tpwn6OpUw/viewform?usp=publish-editor"
+      />
       <main className="max-w-full flex-col items-center">
         <Hero />
         <Container className="mt-20 flex flex-col gap-12 lg:mt-24">
@@ -30,8 +35,9 @@ export default function Home() {
           </Callout>
           <section className="pb-12">
             <Heading level="h2">Events</Heading>
-            <p className="mt-4 block md:mt-8 md:text-lg xl:hidden">
-              Want to learn more or Volunteer? Tap on the events below:
+            <p className="mt-4 block md:mt-8 md:text-lg">
+              Want to learn more about or are interested in participating? Tap
+              on the events below to learn more ⬇️
             </p>
             <div className="mt-8 grid max-h-[70vh] min-w-full grid-flow-col grid-rows-4 gap-4 md:grid-rows-3">
               <EventCard
@@ -46,7 +52,7 @@ export default function Home() {
               />
               <EventCard
                 className="col-span-2 md:col-auto md:max-w-full"
-                eventName="Genshiken Idol"
+                eventName="Live Performances - APPLY NOW"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSesY8iDBZer1LPre7YbFjHEoM0QrcFwPQRfdQRc4Tpwn6OpUw/viewform?usp=publish-editor"
                 image={{
                   src: "/assets/events/phillp-gi-genfest-24.webp",
