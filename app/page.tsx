@@ -145,6 +145,53 @@ export default function Home() {
             Downsview GO, and Downsview Park Station on Line 1
           </Paragraph> */}
           </section>
+          <section className="flex flex-col gap-4 pb-12 lg:gap-12">
+            <Heading level="h2">Connect With Us</Heading>
+            <div className="mx-auto mt-8 mb-8 flex max-w-2xl min-w-sm justify-between text-3xl md:text-4xl lg:mt-4 lg:min-w-lg xl:min-w-xl">
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                href="https://discord.gg/M3dhac79f8"
+                aria-label="Discord"
+              >
+                <i className="bi bi-discord"></i>
+              </a>
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                href="https://www.instagram.com/genshikenfestival/"
+                aria-label="Instagram"
+              >
+                <i className="bi bi-instagram"></i>
+              </a>
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                href="https://www.tiktok.com/@genshikenfestival"
+                aria-label="TikTok"
+              >
+                <i className="bi bi-tiktok"></i>
+              </a>
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                href="https://www.youtube.com/@GenshikenFestival"
+                aria-label="YouTube"
+              >
+                <i className="bi bi-youtube"></i>
+              </a>
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                href="https://twitter.com/GenshikenFes"
+                aria-label="Twitter / X"
+              >
+                <i className="bi bi-twitter"></i>
+              </a>
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                href="mailto:genshikenfestival@gmail.com"
+                aria-label="Email"
+              >
+                <i className="bi bi-envelope-heart-fill"></i>
+              </a>
+            </div>
+          </section>
         </Container>
       </main>
       {createJSON_LD({
