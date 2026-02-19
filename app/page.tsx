@@ -20,10 +20,10 @@ export const metadata = createMetadata({ title: "2026" });
 export default function Home() {
   return (
     <>
-      <Banner
+      {/* <Banner
         text={"Genshiken Idol Performance Applications Open! – APPLY NOW"}
         href="https://docs.google.com/forms/d/e/1FAIpQLSesY8iDBZer1LPre7YbFjHEoM0QrcFwPQRfdQRc4Tpwn6OpUw/viewform?usp=publish-editor"
-      />
+      /> */}
       <main className="max-w-full flex-col items-center">
         <Hero />
         <Container className="mt-20 flex flex-col gap-12 lg:mt-24">
