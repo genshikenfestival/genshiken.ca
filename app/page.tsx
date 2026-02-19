@@ -20,10 +20,10 @@ export const metadata = createMetadata({ title: "2026" });
 export default function Home() {
   return (
     <>
-      <Banner
+      {/* <Banner
         text={"Genshiken Idol Performance Applications Open! – APPLY NOW"}
         href="https://docs.google.com/forms/d/e/1FAIpQLSesY8iDBZer1LPre7YbFjHEoM0QrcFwPQRfdQRc4Tpwn6OpUw/viewform?usp=publish-editor"
-      />
+      /> */}
       <main className="max-w-full flex-col items-center">
         <Hero />
         <Container className="mt-20 flex flex-col gap-12 lg:mt-24">
@@ -144,6 +144,53 @@ export default function Home() {
             located in Downsview Park! The venue is just a short walk from
             Downsview GO, and Downsview Park Station on Line 1
           </Paragraph> */}
+          </section>
+          <section className="flex flex-col gap-4 pb-12 lg:gap-12">
+            <Heading level="h2">Connect With Us</Heading>
+            <div className="mx-auto mt-8 mb-8 flex max-w-2xl min-w-sm justify-between text-3xl md:text-4xl lg:mt-4 lg:min-w-lg xl:min-w-xl">
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                href="https://discord.gg/M3dhac79f8"
+                aria-label="Discord"
+              >
+                <i className="bi bi-discord"></i>
+              </a>
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                href="https://www.instagram.com/genshikenfestival/"
+                aria-label="Instagram"
+              >
+                <i className="bi bi-instagram"></i>
+              </a>
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                href="https://www.tiktok.com/@genshikenfestival"
+                aria-label="TikTok"
+              >
+                <i className="bi bi-tiktok"></i>
+              </a>
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                href="https://www.youtube.com/@GenshikenFestival"
+                aria-label="YouTube"
+              >
+                <i className="bi bi-youtube"></i>
+              </a>
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                href="https://twitter.com/GenshikenFes"
+                aria-label="Twitter / X"
+              >
+                <i className="bi bi-twitter"></i>
+              </a>
+              <a
+                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                href="mailto:genshikenfestival@gmail.com"
+                aria-label="Email"
+              >
+                <i className="bi bi-envelope-heart-fill"></i>
+              </a>
+            </div>
           </section>
         </Container>
       </main>

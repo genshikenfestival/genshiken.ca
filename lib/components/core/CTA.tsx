@@ -16,6 +16,7 @@ export default function CTA({
   return href ? (
     <Link
       href={href}
+      target="_blank"
       className={`bg-brand-purple center group relative block w-full rounded-2xl px-16 py-4 text-center text-lg font-semibold text-white transition-all duration-200 hover:cursor-pointer hover:bg-gray-500 focus:bg-gray-500 active:bg-gray-500 ${className ?? ""}`}
     >
       {children}
