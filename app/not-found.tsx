@@ -13,7 +13,7 @@ import Image from "next/image";
 export const metadata = createMetadata({ title: "Not Found..." });
 export default function NotFound() {
   return (
-    <Container className="flex min-h-[90%] items-center justify-center">
+    <Container className="flex min-h-[83vh] items-center justify-center">
       <div className="flex flex-col gap-2">
         <div className="mb-12 flex w-full justify-center">
           <Image

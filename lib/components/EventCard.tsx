@@ -10,6 +10,7 @@ import Image from "next/image";
 interface EventCardProps extends React.PropsWithChildren {
   eventName: string;
   href?: string;
+  icon?: string;
   image: {
     src: string;
     width: number;
@@ -21,6 +22,7 @@ interface EventCardProps extends React.PropsWithChildren {
 
 export default function EventCard({
   className,
+  icon,
   eventName,
   href,
   image,
@@ -37,7 +39,7 @@ export default function EventCard({
         aria-hidden
       >
         {eventName}
-        <i className="bi bi-arrow-right ml-1"></i>
+        <i className={`bi ml-1 bi-${icon ?? "arrow-right"}`}></i>
       </p>
       <Image
         src={image.src}
