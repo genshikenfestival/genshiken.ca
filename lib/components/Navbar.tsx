@@ -19,32 +19,12 @@ function renderItem(item: NavigationType) {
 
 export default function Navbar({ items }: { items: NavigationType[] }) {
   return (
-    <nav className="absolute top-0 z-20 m-auto h-16 w-[50vw] bg-transparent">
-      {/* <Menu>
-        <MenuItem>
-          <a className="block data-focus:bg-blue-100" href="/settings">
-            Settings
-          </a>
-        </MenuItem>
-        <MenuButton>My account</MenuButton>
-        <MenuItems anchor="bottom">
-          <MenuItem>
-            <a className="block data-focus:bg-blue-100" href="/settings">
-              Settings
-            </a>
-          </MenuItem>
-          <MenuItem>
-            <a className="block data-focus:bg-blue-100" href="/support">
-              Support
-            </a>
-          </MenuItem>
-          <MenuItem>
-            <a className="block data-focus:bg-blue-100" href="/license">
-              License
-            </a>
-          </MenuItem>
-        </MenuItems>
-      </Menu> */}
+    <nav className="bg-brand-purple sticky top-0 left-[50%] z-100 m-auto h-16 w-[25vw] -translate-x-[50%]">
+      <ul className="flex h-full items-center justify-center gap-8 lowercase">
+        {items.map((menuItem) => (
+          <li key={menuItem.title}>{renderItem(menuItem)}</li>
+        ))}
+      </ul>
     </nav>
   );
 }
