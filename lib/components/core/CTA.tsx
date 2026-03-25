@@ -17,7 +17,7 @@ export default function CTA({
     <Link
       href={href}
       target="_blank"
-      className={`bg-brand-purple center group relative block w-full rounded-2xl px-16 py-4 text-center text-lg font-semibold text-white transition-all duration-200 hover:cursor-pointer hover:bg-gray-500 focus:bg-gray-500 active:bg-gray-500 ${className ?? ""}`}
+      className={`bg-brand-purple center group relative block w-full rounded-2xl px-16 py-4 text-center text-base font-semibold text-white transition-all duration-200 hover:cursor-pointer hover:bg-gray-500 focus:bg-gray-500 active:bg-gray-500 md:text-lg ${className ?? ""}`}
     >
       {children}
 
@@ -25,7 +25,7 @@ export default function CTA({
     </Link>
   ) : (
     <Button
-      className={`bg-brand-purple center group relative rounded-2xl px-16 py-4 text-lg font-semibold text-white transition-all duration-200 focus:bg-gray-500 data-active:bg-gray-500 data-hover:cursor-pointer data-hover:bg-gray-500 ${className ?? ""}`}
+      className={`bg-brand-purple center group relative rounded-2xl px-16 py-4 text-base font-semibold text-white transition-all duration-200 focus:bg-gray-500 data-active:bg-gray-500 data-hover:cursor-pointer data-hover:bg-gray-500 md:text-lg ${className ?? ""}`}
     >
       {children}
 

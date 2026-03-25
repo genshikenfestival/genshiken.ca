@@ -24,7 +24,7 @@ export default function Home() {
         text={"Genshiken Idol Performance Applications Open! – APPLY NOW"}
         href="https://docs.google.com/forms/d/e/1FAIpQLSesY8iDBZer1LPre7YbFjHEoM0QrcFwPQRfdQRc4Tpwn6OpUw/viewform?usp=publish-editor"
       /> */}
-      <main className="-mt-15.5 max-w-full flex-col items-center">
+      <main className="max-w-full flex-col items-center md:-mt-15.5">
         <Hero />
         <Container className="mt-20 flex flex-col gap-12 lg:mt-24">
           <Callout
@@ -168,7 +168,7 @@ export default function Home() {
           </section>
           <section className="flex flex-col gap-4 pb-12 lg:gap-12">
             <Heading level="h2">Connect With Us</Heading>
-            <div className="mx-auto mt-8 mb-8 flex max-w-2xl min-w-sm justify-between gap-1.5 text-2xl md:text-4xl lg:mt-4 lg:min-w-lg xl:min-w-xl">
+            <div className="mx-auto mt-8 mb-8 flex max-w-2xl justify-between gap-4 text-2xl md:text-4xl lg:mt-4 lg:min-w-lg xl:min-w-xl">
               <a
                 className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
                 href="https://discord.gg/M3dhac79f8"
