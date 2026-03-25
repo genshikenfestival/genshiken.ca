@@ -16,6 +16,7 @@
     "@headlessui/react": "^2.2.9",
     "@opennextjs/cloudflare": "^1.16.5",
     "bootstrap-icons": "^1.13.1",
+    "locomotive-scroll": "^5.0.1",
     "motion": "^12.29.2",
     "next": "16.1.5",
     "react": "19.2.3",

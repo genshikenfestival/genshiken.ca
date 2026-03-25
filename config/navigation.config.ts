@@ -7,10 +7,6 @@
 
 export const ALL_NAVIGATION: NavigationType[] = [
   {
-    title: "Event Guide",
-    href: "/assets/2026/Genshiken_2026_Guide.pdf",
-  },
-  {
     title: "About",
     href: "/#about",
   },
@@ -23,14 +19,21 @@ export const ALL_NAVIGATION: NavigationType[] = [
     href: "/#venue",
   },
   {
+    title: "Event Guide",
+    href: "/assets/2026/Genshiken_2026_Guide.pdf",
+    newWindow: true,
+  },
+  {
     title: "Official Policies",
     href: "/assets/2026/Genshiken_2026_Policies.pdf",
+    newWindow: true,
   },
 ];
 
 export type NavigationType = {
   title: string;
   href?: string;
+  newWindow?: boolean;
   children?: NavigationItemType[];
 };
 

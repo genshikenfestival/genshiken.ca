@@ -35,10 +35,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-CA" className="h-full min-h-full">
-      <body
-        className={`${inter.className} m-0 h-full min-h-full w-full p-0 antialiased`}
-      >
+    <html lang="en-CA" className="scroll-smooth">
+      <body className={`${inter.className} m-0 p-0 antialiased`}>
         <Navbar items={ALL_NAVIGATION} />
         {children}
         <Footer />

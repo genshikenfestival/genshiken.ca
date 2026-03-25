@@ -24,16 +24,20 @@ export default function Home() {
         text={"Genshiken Idol Performance Applications Open! – APPLY NOW"}
         href="https://docs.google.com/forms/d/e/1FAIpQLSesY8iDBZer1LPre7YbFjHEoM0QrcFwPQRfdQRc4Tpwn6OpUw/viewform?usp=publish-editor"
       /> */}
-      <main className="max-w-full flex-col items-center">
+      <main className="-mt-15.5 max-w-full flex-col items-center">
         <Hero />
         <Container className="mt-20 flex flex-col gap-12 lg:mt-24">
-          <Callout title="What is Genshiken?" className="mb-8">
+          <Callout
+            title="What is Genshiken?"
+            className="mb-8 scroll-mt-38"
+            id="about"
+          >
             Genshiken Festival is a one-day convention organized by students
             from a variety of Ontario University Anime Clubs and brought to you
             by some of the same organizers as Ākēdo Festival! The Festival
             features Artist Alleys, Maid Cafe, Performances, and more!
           </Callout>
-          <section className="pb-12">
+          <section className="pb-12" id="events">
             <Heading level="h2">Events</Heading>
             <p className="mt-4 block md:mt-8 md:text-lg">
               Interested about what&apos;s going on?! Tap on the events below to
@@ -105,7 +109,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="flex flex-col gap-4 pb-12 lg:gap-12">
+          <section className="flex flex-col gap-4 pb-12 lg:gap-12" id="venue">
             <Heading level="h2">Venue and Location</Heading>
 
             <div className="flex flex-col-reverse gap-8 lg:flex-row">
