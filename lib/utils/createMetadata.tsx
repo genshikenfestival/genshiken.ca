@@ -36,7 +36,7 @@ const createMetadata = ({ title }: createMetadataProps) => {
       siteName: "Genshiken Festival",
       images: [
         {
-          url: "https://genshiken.preview.surajgoraya.ca/ogp.png",
+          url: "https://genshiken.ca/ogp.jpg",
         },
       ],
     },
@@ -47,7 +47,7 @@ const createMetadata = ({ title }: createMetadataProps) => {
       title: `Genshiken Festival - ${title}`,
       description:
         "A 1-Day anime convention hosted by Students from various University Anime Clubs across Ontario!",
-      images: "https://genshiken.preview.surajgoraya.ca/ogp.png",
+      images: "https://genshiken.ca/ogp.jpg",
     },
   };
 

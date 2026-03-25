@@ -24,71 +24,92 @@ export default function Home() {
         text={"Genshiken Idol Performance Applications Open! – APPLY NOW"}
         href="https://docs.google.com/forms/d/e/1FAIpQLSesY8iDBZer1LPre7YbFjHEoM0QrcFwPQRfdQRc4Tpwn6OpUw/viewform?usp=publish-editor"
       /> */}
-      <main className="max-w-full flex-col items-center">
+      <main className="max-w-full flex-col items-center md:-mt-15.5">
         <Hero />
         <Container className="mt-20 flex flex-col gap-12 lg:mt-24">
-          <Callout title="What is Genshiken?" className="mb-8">
+          <Callout
+            title="What is Genshiken?"
+            className="mb-8 scroll-mt-38"
+            id="about"
+          >
             Genshiken Festival is a one-day convention organized by students
             from a variety of Ontario University Anime Clubs and brought to you
             by some of the same organizers as Ākēdo Festival! The Festival
             features Artist Alleys, Maid Cafe, Performances, and more!
           </Callout>
-          <section className="pb-12">
+          <section className="pb-12" id="events">
             <Heading level="h2">Events</Heading>
             <p className="mt-4 block md:mt-8 md:text-lg">
-              Want to learn more about or are interested in participating? Tap
-              on the events below to learn more ⬇️
+              Interested about what&apos;s going on?! Tap on the events below to
+              learn more ⬇️
             </p>
-            <div className="mt-8 grid max-h-[70vh] min-w-full grid-flow-col grid-rows-4 gap-4 md:grid-rows-3">
-              <EventCard
-                className="col-span-2 md:col-auto md:max-w-full"
-                eventName="Maid Cafe"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfd6U6xYt4YhpGc_lpb1ugTcYxmLGnz8OPr3Pds8ZL8dUBfqA/viewform?usp=publish-editor"
-                image={{
-                  src: "/assets/events/phillp-mc-haru-aki-edit-genfest-24.webp",
-                  width: 1920,
-                  height: 1080,
-                }}
-              />
-              <EventCard
-                className="col-span-2 md:col-auto md:max-w-full"
-                eventName="Live Performances - APPLY NOW"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSesY8iDBZer1LPre7YbFjHEoM0QrcFwPQRfdQRc4Tpwn6OpUw/viewform?usp=publish-editor"
-                image={{
-                  src: "/assets/events/phillp-gi-genfest-24.webp",
-                  width: 3177,
-                  height: 1667,
-                  className:
-                    "h-full min-h-full w-full min-w-full object-cover object-top",
-                }}
-              />
-              <EventCard
-                className="col-span-2 md:col-auto md:max-w-full"
-                href="/otw"
-                eventName="Cosplay Contest"
-                image={{
-                  src: "/assets/events/phillp-cc-genfest-24.webp",
-                  width: 3177,
-                  height: 1667,
-                  className:
-                    "h-full min-h-full w-full min-w-full object-cover object-top",
-                }}
-              />
-              <EventCard
-                eventName="Artist Alley"
-                className="col-span-2 md:row-span-3"
-                href="https://www.instagram.com/genshikenfestival/"
-                image={{
-                  src: "/assets/events/phillp-aa-genfest-24.webp",
-                  width: 3177,
-                  height: 1667,
-                  className:
-                    "h-full min-h-full w-full min-w-full object-cover object-center",
-                }}
-              />
+            <div className="mt-8 flex flex-col">
+              <div className="mt-4 grid min-w-full grid-flow-col grid-rows-1 gap-4 md:max-h-[30vh] md:grid-rows-3">
+                <EventCard
+                  icon="heart-fill ml-1.5"
+                  eventName="View Full Event Guide"
+                  className="col-span-2 md:row-span-3"
+                  href="/assets/2026/Genshiken_2026_Guide.pdf"
+                  image={{
+                    src: "/assets/2026/haru-aki-2026.jpg",
+                    width: 3177,
+                    height: 1667,
+                    className:
+                      "h-full min-h-full w-full min-w-full object-cover object-center",
+                  }}
+                />
+              </div>
+              <div className="mt-4 grid max-h-[70vh] min-w-full grid-flow-col grid-rows-4 gap-4 md:grid-rows-3">
+                <EventCard
+                  className="col-span-2 md:col-auto md:max-w-full"
+                  eventName="Maid Cafe"
+                  href="/assets/2026/Genshiken_2026_Guide.pdf#page=15"
+                  image={{
+                    src: "/assets/events/phillp-mc-haru-aki-edit-genfest-24.webp",
+                    width: 1920,
+                    height: 1080,
+                  }}
+                />
+                <EventCard
+                  className="col-span-2 md:col-auto md:max-w-full"
+                  eventName="Live Performances"
+                  href="/assets/2026/Genshiken_2026_Guide.pdf#page=16"
+                  image={{
+                    src: "/assets/events/phillp-gi-genfest-24.webp",
+                    width: 3177,
+                    height: 1667,
+                    className:
+                      "h-full min-h-full w-full min-w-full object-cover object-top",
+                  }}
+                />
+                <EventCard
+                  className="col-span-2 md:col-auto md:max-w-full"
+                  href="/assets/2026/Genshiken_2026_Guide.pdf#page=17"
+                  eventName="Cosplay Contest"
+                  image={{
+                    src: "/assets/events/phillp-cc-genfest-24.webp",
+                    width: 3177,
+                    height: 1667,
+                    className:
+                      "h-full min-h-full w-full min-w-full object-cover object-top",
+                  }}
+                />
+                <EventCard
+                  eventName="Artist Alley"
+                  className="col-span-2 md:row-span-3"
+                  href="/assets/2026/Genshiken_2026_Guide.pdf#page=14"
+                  image={{
+                    src: "/assets/events/phillp-aa-genfest-24.webp",
+                    width: 3177,
+                    height: 1667,
+                    className:
+                      "h-full min-h-full w-full min-w-full object-cover object-center",
+                  }}
+                />
+              </div>
             </div>
           </section>
-          <section className="flex flex-col gap-4 pb-12 lg:gap-12">
+          <section className="flex flex-col gap-4 pb-12 lg:gap-12" id="venue">
             <Heading level="h2">Venue and Location</Heading>
 
             <div className="flex flex-col-reverse gap-8 lg:flex-row">
@@ -147,44 +168,44 @@ export default function Home() {
           </section>
           <section className="flex flex-col gap-4 pb-12 lg:gap-12">
             <Heading level="h2">Connect With Us</Heading>
-            <div className="mx-auto mt-8 mb-8 flex max-w-2xl min-w-sm justify-between text-3xl md:text-4xl lg:mt-4 lg:min-w-lg xl:min-w-xl">
+            <div className="mx-auto mt-8 mb-8 flex max-w-2xl justify-between gap-4 text-2xl md:text-4xl lg:mt-4 lg:min-w-lg xl:min-w-xl">
               <a
-                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
                 href="https://discord.gg/M3dhac79f8"
                 aria-label="Discord"
               >
                 <i className="bi bi-discord"></i>
               </a>
               <a
-                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
                 href="https://www.instagram.com/genshikenfestival/"
                 aria-label="Instagram"
               >
                 <i className="bi bi-instagram"></i>
               </a>
               <a
-                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
                 href="https://www.tiktok.com/@genshikenfestival"
                 aria-label="TikTok"
               >
                 <i className="bi bi-tiktok"></i>
               </a>
               <a
-                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
                 href="https://www.youtube.com/@GenshikenFestival"
                 aria-label="YouTube"
               >
                 <i className="bi bi-youtube"></i>
               </a>
               <a
-                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
                 href="https://twitter.com/GenshikenFes"
                 aria-label="Twitter / X"
               >
                 <i className="bi bi-twitter"></i>
               </a>
               <a
-                className="hover:text-brand-purple focus:text-brand-purple opacity-75 transition-all hover:opacity-100"
+                className="hover:text-brand-purple focus:text-brand-purple m-0 opacity-75 transition-all hover:opacity-100"
                 href="mailto:genshikenfestival@gmail.com"
                 aria-label="Email"
               >

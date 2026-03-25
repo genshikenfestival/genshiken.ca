@@ -19,23 +19,21 @@ export const ALL_NAVIGATION: NavigationType[] = [
     href: "/#venue",
   },
   {
-    title: "Policies",
-    children: [
-      {
-        href: "/policies/artists",
-        title: "Artists Alley Policy",
-      },
-      {
-        href: "/policies/safety",
-        title: "Safety and Anti-Harassment",
-      },
-    ],
+    title: "Event Guide",
+    href: "/assets/2026/Genshiken_2026_Guide.pdf",
+    newWindow: true,
+  },
+  {
+    title: "Official Policies",
+    href: "/assets/2026/Genshiken_2026_Policies.pdf",
+    newWindow: true,
   },
 ];
 
 export type NavigationType = {
   title: string;
   href?: string;
+  newWindow?: boolean;
   children?: NavigationItemType[];
 };
 
